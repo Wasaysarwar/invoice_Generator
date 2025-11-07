@@ -4,9 +4,11 @@ import mongoose from "mongoose";
 // Load environment variables from the .env file
 dotenv.config();
 
+
 const connectDB = async () => {
+
   try {
-    const conn = await mongoose.connect('mongodb+srv://abdulwassay2959_db_user:wasay123%40@cluster0.l9knfnl.mongodb.net/?appName=Cluster0');
+    const conn = await mongoose.connect(process.env.MONGO_URI);
     console.log(`✅ MongoDB Connected: ${conn.connection.host}`);
   } catch (error) {
     console.log(process.env.MONGO_URI)

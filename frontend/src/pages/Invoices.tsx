@@ -19,7 +19,7 @@ const Invoices = () => {
   const [clientName, setClientName] = useState("");
   const [amount, setAmount] = useState("");
   const [description, setDescription] = useState("");
-  const userId = localStorage.getItem("userId"); // store userId on login
+  const userId = localStorage.getItem("token"); // store userId on login
 
   // Fetch invoices from backend
   useEffect(() => {

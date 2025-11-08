@@ -229,7 +229,7 @@ export const CreateInvoiceDialog = () => {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button variant="hero">Create New Invoice</Button>
+        <Button variant="hero" size="lg">Create New Invoice</Button>
       </DialogTrigger>
       <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>

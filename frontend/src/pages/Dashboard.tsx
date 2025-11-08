@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { FileText, TrendingUp, DollarSign, Clock, Settings, LogOut } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { CreateInvoiceDialog } from "@/components/CreateInvoiceDialog";
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -109,9 +110,8 @@ const Dashboard = () => {
                 View All Invoices
               </Button>
             </Link>
-            <Button variant="default" size="lg">
-              Create New Invoice
-            </Button>
+            <CreateInvoiceDialog />
+
             <Link to="/profile">
               <Button variant="outline" size="lg">
                 Edit Company Profile
